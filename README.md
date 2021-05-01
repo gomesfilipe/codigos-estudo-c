@@ -10,4 +10,6 @@ Código que possui os estudos iniciais de listas encadeadas simples em C. Foram 
 
 ## lista1.c
 
-Refiz as listas encadeadas com objetivo de fixar o conteúdo. Agora a lista implementada foi com um tipo Ponto, que possui coordenadas x e y. Foram criadas funções de adicionar e remover pontos no início e no final da lista. 
+Refiz as listas encadeadas com objetivo de fixar o conteúdo. Agora a lista implementada foi com um tipo Ponto, que possui coordenadas x e y. Foram criadas funções de adicionar e remover pontos no início e no final da lista.
+
+Edit: Acrescentadas funções de liberação de memória e pesquisa.
