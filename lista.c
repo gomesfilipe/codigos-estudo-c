@@ -13,7 +13,7 @@ Celula* inicializaCelula(int conteudo) {
     return c;
 }
 
-void insere(Celula* inicio, int conteudo) {
+Celula* insere(Celula* inicio, int conteudo) {
     Celula* aux = inicio;
 
     while(aux->prox != NULL) {
@@ -22,6 +22,7 @@ void insere(Celula* inicio, int conteudo) {
 
     Celula* novoElemento = inicializaCelula(conteudo);
     aux->prox = novoElemento;
+    return aux; // Retornando referência do último elemento
 }
 
 void imprimeLista(Celula* inicio){
@@ -36,7 +37,6 @@ void imprimeLista(Celula* inicio){
 Celula* removePrimeiroElemento(Celula *inicio){
     Celula *aux = inicio;
     inicio = inicio->prox;
-    printf("[%d]", inicio->conteudo);
     free(aux);
     return inicio;
 }
